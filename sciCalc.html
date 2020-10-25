@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scientific Calculator</title>
+	<!-- botstrap cdn -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- jquery cdn -->
+	<script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="sciCalc.css">
+</head>
+<body>
+	<table>
+		<tr>
+			<td colspan="9">
+				<input type="text" id="display-bar">
+			</td>
+		</tr>
+		<tr>
+			<td><button class="btn-block btn-primary numKey" onclick="display('7')">7</button></td>
+			<td><button class="btn-block btn-primary numKey" onclick="display('8')">8</button></td>
+			<td><button class="btn-block btn-primary numKey" onclick="display('9')">9</button></td>
+			<td><button class="btn-block btn-outline-warning delKey" onclick="del()">DEL</button></td>
+			<td><button class="btn-block btn-outline-danger clrKey" onclick="clr()">AC</button></td>
+			<td><button id="tan" class="btn-block btn-success trgKey" onclick="display('Math.tan(')">tan(x)</button></td>
+			<td><button class="btn-block mybtn1 extKey" onclick="display('Math.abs(')">abs(x)</button></td>
+			<td rowspan="2"><button class="btn-block mybtn5 expKey" onclick="display('Math.exp(')">e</button></td>
+			<td><button class="btn-block mybtn4 bktKey" onclick="display('(')">(</button></td>
+		</tr>
+		<tr>
+			<td><button class="btn-block btn-primary numKey" onclick="display('4')">4</button></td>
+			<td><button class="btn-block btn-primary numKey" onclick="display('5')">5</button></td>
+			<td><button class="btn-block btn-primary numKey" onclick="display('6')">6</button></td>
+			<td><button class="btn-block btn-secondary spcKey" onclick="display('*')">*</button></td>
+			<td><button class="btn-block btn-secondary spcKey" onclick="display('/')">/</button></td>
+			<td><button id="sin" class="btn-block btn-success trgKey" onclick="display('Math.sin(')">sin(x)</button></td>
+			<td><button class="btn-block btn-info powKey" onclick="display('**')">a<sup>x</sup></button></td>
+			<td rowspan="2"><button class="btn-block mybtn3 sftKey" onclick="display('sft')">⇧</button></td>
+		</tr>
+		<tr>
+			<td><button class="btn-block btn-primary numKey" onclick="display('1')">1</button></td>
+			<td><button class="btn-block btn-primary numKey" onclick="display('2')">2</button></td>
+			<td><button class="btn-block btn-primary numKey" onclick="display('3')">3</button></td>
+			<td><button class="btn-block btn-secondary spcKey" onclick="display('+')">+</button></td>
+			<td><button class="btn-block btn-secondary spcKey" onclick="display('-')">-</button></td>
+			<td><button id='cos' class="btn-block btn-success trgKey" onclick="display('Math.cos(')">cos(x)</button></td>
+			<td><button id="ln" class="btn-block mybtn1 extKey" onclick="display('Math.log(')">ln(x)</button></td>
+			<td rowspan="2"><button class="btn-block mybtn5 piKey" onclick="display('Math.PI')">&#928;</button></td>
+		</tr>
+		<tr>
+			<td><button class="btn-block btn-primary numKey" onclick="display('0')">0</button></td>
+			<td><button class="btn-block btn-primary numKey" onclick="display('.')">.</button></td>
+			<td><button class="btn-block btn-info powKey" onclick="display('*(10**')">*10<sup>x</sup></button></td>
+			<td><button class="btn-block mybtn2-outline ansKey" onclick="savelast()">ANS</button></td>
+			<td><button class="btn-block btn-secondary eqlKey" onclick="solve()">=</button></td>
+			<td><button id="pow2" class="btn-block btn-info powKey" onclick="display('**2')">x<sup>2</sup></button></td>
+			<td><button id="pow3" class="btn-block btn-info powKey" onclick="display('**3')">x<sup>3</sup></button></td>
+			<td><button class="btn-block mybtn4 bktKey" onclick="display(')')">)</button></td>
+		</tr>
+	</table>
+	<script src="sciCalc.js"></script>
+</body>
+</html>

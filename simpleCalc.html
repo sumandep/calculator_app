@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic Calculator</title>
+	<!-- botstrap cdn -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- jquery cdn -->
+	<script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="simpleCalc.css">
+</head>
+<body>
+
+	<div class="center">
+			<table>
+				<tbody>
+					<tr>
+						<td colspan="6">
+							<input type="text" id="calcDisp">
+						</td>
+					</tr>
+					<tr>
+						<td><input type="button" value="1" class="btn btn-block btn-success numKey" onclick="keyId('1')"></td>
+						<td><input type="button" value="2" class="btn btn-block btn-success numKey" onclick="keyId('2')"></td>
+						<td><input type="button" value="3" class="btn btn-block btn-success numKey" onclick="keyId('3')"></td>
+						<td colspan="2">
+							<input type="button" value="+" class="btn btn-block btn-info oprKey" onclick="keyId('+')">
+						</td>
+						<td><input type="button" class="btn btn-block btn-danger clrKey" value="C" onclick="clr()"></td>
+					</tr>
+					<tr>
+						<td><input type="button" value="4" class="btn btn-block btn-success numKey" onclick="keyId('4')"></td>
+						<td><input type="button" value="5" class="btn btn-block btn-success numKey" onclick="keyId('5')"></td>
+						<td><input type="button" value="6" class="btn btn-block btn-success numKey" onclick="keyId('6')"></td>
+						<td colspan="2">
+							<input type="button" value="-" class="btn btn-block btn-info oprKey" onclick="keyId('-')">
+						</td>
+						<td rowspan="2">
+							<input type="button" class=" btn btn-block btn-secondary equalKey" value="=" onclick="calc('=')">
+						</td>
+					</tr>
+					<tr>
+						<td><input type="button" value="7" class="btn btn-block btn-success numKey" onclick="keyId('7')"></td>
+						<td><input type="button" value="8" class="btn btn-block btn-success numKey" onclick="keyId('8')"></td>
+						<td><input type="button" value="9" class="btn btn-block btn-success numKey" onclick="keyId('9')"></td>
+						<td colspan="2">
+							<input type="button" value="*" class="btn btn-block btn-info oprKey" onclick="keyId('*')">
+						</td>
+					</tr>		
+					<tr>
+						<td colspan="3">
+							<input type="button" value="0" class="btn btn-block btn-success numKey" onclick="keyId('0')">
+						</td>
+						<td colspan="2">
+							<input type="button" value="/" class="btn btn-block btn-info oprKey" onclick="keyId('/')">
+						</td>
+						<td>
+							<input type="button" class="btn btn-block btn-success numKey" value="." onclick="keyId('.')">
+						</td>
+					</tr>			
+				</tbody>
+			</table>
+		</div>
+		<script type="text/javascript" src="basicCalc.js"></script>
+
+	</body>
+</html>

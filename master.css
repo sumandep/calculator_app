@@ -1,0 +1,63 @@
+body{
+	font-family: 'Rubik', sans-serif;
+
+	background: linear-gradient(138deg, #f08080, #f4978e, #f8ad9d, #fbc4ab, #ffdab9);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: bgGradAni 20s ease infinite;
+    -moz-animation: bgGradAni 20s ease infinite;
+    -o-animation: bgGradAni 20s ease infinite;
+    animation: bgGradAni 20s ease infinite;
+}
+@-webkit-keyframes bgGradAni {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes bgGradAni {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes bgGradAni {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes bgGradAni {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+.title{
+	font-size:5em;
+}
+.author{
+	font-size:3em;
+}
+iframe[src="simpleCalc.html"]{
+	width: 750px;
+	height: 526px;
+	display: block;
+	margin:auto;
+}
+iframe[src="sciCalc.html"]{
+    width: 1350px;
+    height: 526px;
+    display: block;
+    margin:auto;
+}
+.selector-bar{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+#calcType{
+    background-color: #ff4268;
+    color: #fff;
+}
+#calcType:hover{
+    background-color: #bd2f4c;
+    color: #fff;
+}
